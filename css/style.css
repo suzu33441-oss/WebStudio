@@ -16,3 +16,7 @@ a {
     --main-font: "Roboto", sans-serif;
     --second-font: "Roleway", sans-serif;
 }
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
