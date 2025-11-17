@@ -35,10 +35,7 @@ body {
     font-family: var(--second-font);
     font-size: 26px;
     font-weight: 700;
-    width: 145px;
-    height: 31px;
-    width: 45px;
-    height: 16px;
+    letter-spacing: 0.03em;
 }
 .header-list {
     display: flex;
@@ -67,8 +64,6 @@ body {
     border: 0px;
     font-family: var(--main-font);
     border-radius: 4px;
-    width: 216px;
-    height: 50px;
     font-size: 16px;
 }
 .advantages-title {
@@ -82,8 +77,6 @@ body {
     font-size: 14px;
     font-family: var(--main-font);
     font-weight: 400;
-    width: 270px;
-    height: 72px;
 }
 h2 {
     font-family: var(--main-font);
@@ -96,30 +89,21 @@ h2 {
     font-family: var(--main-font);
     font-size: 16px;
     font-weight: 500;
-    width: 129px;
-    height: 19px;
 }
 .team-job {
     font-family: var(--main-font);
     font-size: 16px;
     font-weight: 400;
-    width: 130px;
-    height: 19px;
 }
 .footer-logo {
     font-family: var(--second-font);
     font-size: 26px;
     font-weight: 700;
-    width: 145px;
-    height: 31px;
-    width: 45px;
-    height: 16px;
 }
 
 .header-wraper {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     align-items: center;
 }
 .header_contact-list {
