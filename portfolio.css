@@ -7,7 +7,11 @@
     --background-color: #2F303A;
     --background-second-color: #F5F4FA;
     --adress-color: #ffffff9d;
-    --borders-color: #EEEEEE;
+    --borders-color: #eeeeee;
+    --button-colors: #f5f4fa;
+    --line-color: #ECECEC;
+    --text-buttons: #212121;
+    --borders-product: #EEEEEE;
 }
 :root {
     --main-font: "Roboto", sans-serif;
@@ -25,6 +29,7 @@ body {
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid var(--line-color);
 }
 .header-wraper {
     display: flex;
@@ -83,110 +88,62 @@ body {
     letter-spacing: 0.02em;
 }
 .header_contact-link:hover {
-    content: "";
-    display: flex;
     color: var(--accent-color);
 }
-.arrange {
-    padding-top: 200px;
-    padding-bottom: 200px;
+.product {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
-.arrange {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-color: var(--background-color);
-    text-align: center;
-}
-.arrange-title {
-    font-family: var(--main-font);
-    font-size: 44px;
-    font-weight: 900;
-    color: var(--borders-color);
-    letter-spacing: 0.06em;
-    line-height: 60px;
-    padding-bottom: 30px;
-}
-.arrange-button {
-    background-color: rgba(33, 150, 243, 1);
-    color: var(--borders-color);
-    border: 0px;
-    font-family: var(--main-font);
-    border-radius: 4px;
-    font-size: 16px;
-    padding: 10px 32px;
-}
-.advantages-title {
-    font-size: 14px;
-    font-family: var(--main-font);
-    font-weight: 700;
-    color: var(--tittle-second-color);
-    padding-bottom: 10px;
-    letter-spacing: 0.03em;
-}
-.advantages-text {
-    font-size: 14px;
-    font-family: var(--main-font);
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
-}
-h2 {
-    font-family: var(--main-font);
-    font-size: 36px;
-    font-weight: 700;
-    color: rgba(33, 33, 33, 1);
-    text-align: center;
+.button-list {
+    display: flex;
+    justify-content:center;
+    gap: 8px;
     padding-bottom: 50px;
-    letter-spacing: 0.03em;
 }
-.services {
-    padding-bottom: 94px;
-    display: flex;
-}
-.services-list {
-    display: flex;
-    gap: 30px;
-    text-align: center;
-}
-.team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: var(--background-second-color);
-}
-.team-member {
+.button-btn {
+    border: none;
+    background-color: var(--button-colors);
+    color: var(--text-buttons);
     font-family: var(--main-font);
-    font-size: 16px;
     font-weight: 500;
-    text-align: center;
-    padding-top: 30px;
+    font-size: 16px;
     letter-spacing: 0.03em;
-    color: var(--tittle-second-color);
+    padding: 6px 22px;
+    border-radius: 4px;
+    line-height: 26px;
 }
-.team-job {
+.button-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--second-accent-color);
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.product-item {
+    flex-basis: calc((100% - 60px)/3);
+}
+.product-title {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    color: var(--text-buttons);
+    line-height: 36px;
+}
+.product-text {
     font-family: var(--main-font);
     font-size: 16px;
-    text-align: center;
-    padding-top: 10px;
     letter-spacing: 0.03em;
+    padding-top: 4px;
     color: var(--text-color);
+    line-height: 30px;
 }
-.team-item {
-    background-color: var(--second-accent-color);
-    padding-bottom: 30px;
-    border-radius: 4px;
-}
-.advantages-list {
-    display: flex;
-    gap: 30px;
-}
-.advantages {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    display: flex;
-}
-.team-list {
-    display: flex;
-    gap: 30px;
+.product-line {
+    border: 1px solid var(--borders-product);
+    border-top: none;
+    padding: 20px 24px;
 }
 .footer {
     padding-bottom: 60px;
@@ -224,3 +181,4 @@ h2 {
     color: var(--second-accent-color);
     line-height: 24px;
 }
+

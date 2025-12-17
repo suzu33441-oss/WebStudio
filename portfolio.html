@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./portfolio.css">
     <link
-        href="https://fonts.google.com/specimen/Raleway/about?query=Raleway,https://fonts.google.com/specimen/Roboto?query=Raleway">
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
-        <div class="container">
-            <a class="header-logo" href="index.html"><span>Web</span>Studio</a>
-            <nav class="header-nav">
-                <ul class="header-list">
-                    <li class="header-item"><a class="header-link" href="index.html">студия</a></li>
-                    <li class="header-item"><a class="header-link" href="">портфолио</a></li>
-                    <li class="header-item"><a class="header-link" href="">контакты</a></li>
+        <div class=" container header-container">
+            <a class="header-logo" href="index.html"><span class="header-letters">Web</span>Studio</a>
+            <div class="header-wraper">
+                <nav class="header-nav">
+                    <ul class="header-list">
+                        <li class="header-item"><a class="header-link" href="">Студия</a></li>
+                        <li class="header-item"><a class="header-link" href="portfolio.html">Портфолио</a></li>
+                        <li class="header-item"><a class="header-link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="header_contact-list">
+                    <li class="header_contact-item"><a class="header_contact-link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="header_contact-item"><a class="header_contact-link" href="tel:+380961111111">+38 096 111
+                            11 11</a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="header_contact-list">
-                <li class="header_contact-item"><a class="header_contact-link"
-                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="header_contact-item"><a class="header_contact-link" href="tel:+380961111111">+38 096 111 11
-                        11</a></li>
-            </ul>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -42,65 +48,83 @@
                     <li class="product-item">
                         <a class="product-link" href="">
                             <img class="product-img" src="./images/tecnocrak.png" alt="сайт технокряк">
-                            <h3 class="product-title">Технокряк</h3>
-                            <p class="product-text">Веб-Сайт</p>
+                            <div class="product-line">
+                                <h3 class="product-title">Технокряк</h3>
+                                <p class="product-text">Веб-Сайт</p>
+                            </div>
                         </a>
                     </li>
                     <li class="product-item">
                         <a class="product-link" href="">
                             <img class="product-img" src="./images/poster.png"
                                 alt="дизайн постер New Orlean vs Gjlden star">
-                            <h3 class="product-title">New Orlean vs Gjlden star</h3>
-                            <p class="product-text">Дизайн</p>
+                            <div class="product-line">
+                                <h3 class="product-title">New Orlean vs Golden star</h3>
+                                <p class="product-text">Дизайн</p>
+                            </div>
                         </a>
                     </li>
                     <li class="product-item">
                         <a class="product-link" href=""><img class="product-img" src="./images/seafood.png"
                                 alt="приложение Ресторан Seafood">
-                            <h3 class="product-title">Ресторан Seafood</h3>
-                            <p class="product-text">Приложение</p>
+                            <div class="product-line">
+                                <h3 class="product-title">Ресторан Seafood</h3>
+                                <p class="product-text">Приложение</p>
+                            </div>
                         </a>
                     </li>
                     <li class="product-item">
                         <a class="product-link" href=""><img class="product-img" src="./images/prime.png"
                                 alt="маркетинг Проект Prime">
-                            <h3 class="product-title">Проект Prime</h3>
-                            <p class="product-text">Маркетинг</p>
+                            <div class="product-line">
+                                <h3 class="product-title">Проект Prime</h3>
+                                <p class="product-text">Маркетинг</p>
+                            </div>
                         </a>
                     </li>
                     <li class="product-item">
                         <a class="product-link" href=""><img class="product-img" src="./images/boxes.png"
                                 alt="приложение Проект Boxes">
-                            <h3 class="product-title">Проект Boxes</h3>
-                            <p class="product-text">Приложение</p>
+                            <div class="product-line">
+                                <h3 class="product-title">Проект Boxes</h3>
+                                <p class="product-text">Приложение</p>
+                            </div>
                         </a>
                     </li>
                     <li class="product-item">
                         <a class="product-link" href=""><img class="product-img" src="./images/inspiration.png"
                                 alt="Сайт Inspiration has no Borders">
-                            <h3 class="product-title">Inspiration has no Borders</h3>
-                            <p class="product-text">Веб-Сайт</p>
+                            <div class="product-line">
+                                <h3 class="product-title">Inspiration has no Borders</h3>
+                                <p class="product-text">Веб-Сайт</p>
+                            </div>
                         </a>
                     </li>
                     <li class="product-item">
                         <a class="product-link" href=""><img class="product-img" src="./images/limited.png"
                                 alt="дизайн Издание Limited Edition">
-                            <h3 class="product-title">Издание Limited Edition</h3>
-                            <p class="product-text">Дизайн</p>
+                            <div class="product-line">
+                                <h3 class="product-title">Издание Limited Edition</h3>
+                                <p class="product-text">Дизайн</p>
+                            </div>
                         </a>
                     </li>
                     <li class="product-item">
                         <a class="product-link" href=""><img class="product-img" src="./images/lab.png"
                                 alt="Маркетинг Проект LAB">
-                            <h3 class="product-title">Проект LAB</h3>
-                            <p class="product-text">Маркетинг</p>
+                            <div class="product-line">
+                                <h3 class="product-title">Проект LAB</h3>
+                                <p class="product-text">Маркетинг</p>
+                            </div>
                         </a>
                     </li>
                     <li class="product-item">
                         <a class="product-link" href=""><img class="product-img" src="./images/business.png"
                                 alt="Приложение Growing Business">
-                            <h3 class="product-title">Growing Business</h3>
-                            <p class="product-text">Приложение</p>
+                            <div class="product-line">
+                                <h3 class="product-title">Growing Business</h3>
+                                <p class="product-text">Приложение</p>
+                            </div>
                         </a>
                     </li>
                 </ul>
@@ -108,11 +132,12 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <a class="footer-logo" href="index.html"><span>Web</span>Studio</a>
+        <div class="container-footer container">
+            <a class="footer-logo" href="index.html"><span class="footer-letters">Web</span>Studio</a>
             <address class="address">
                 <ul class="address-list">
-                    <li class="address-item"><a class="address-link" href=""> м. Киев, пр-т Леси Украинки, 26 </a></li>
+                    <li class="address-item"><a class="address-link address-special" href=""> м. Киев, пр-т Леси
+                            Украинки, 26 </a></li>
                     <li class="address-item"><a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com
                         </a></li>
                     <li class="address-item"><a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
@@ -121,4 +146,5 @@
         </div>
     </footer>
 </body>
+
 </html>
