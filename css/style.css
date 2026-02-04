@@ -8,6 +8,7 @@
     --background-second-color: #F5F4FA;
     --adress-color: #ffffff9d;
     --borders-color: #EEEEEE;
+    --footer-link-color: #ffffff99;
 }
 :root {
     --main-font: "Roboto", sans-serif;
@@ -45,46 +46,30 @@ body {
     color: var(--logo-color);
 }
 .header-letters {
-    font-family: var(--second-font);
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
     color: var(--accent-color);
 }
 .header-list {
     display: flex;
-    justify-content:end;
     gap: 50px;
 }
 .header-link {
     color: var(--tittle-second-color);
-    font-family: var(--main-font);
     font-weight: 500;
-    font-size: 14px;
     letter-spacing: 0.02em;
 }
 .header-link:hover {
-    content: "";
-    display: flex;
-    flex-wrap: wrap;
     color: var(--accent-color);
 }
 .header_contact-list {
     display: flex;
-    justify-content: flex-end;
     gap: 50px;
-    color: var(--text-color);
 }
 .header_contact-link {
     color: var(--text-color);
-    font-family: var(--main-font);
     font-weight: 500;
-    font-size: 14px;
     letter-spacing: 0.02em;
 }
 .header_contact-link:hover {
-    content: "";
-    display: flex;
     color: var(--accent-color);
 }
 .arrange {
@@ -94,47 +79,73 @@ body {
 .arrange {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/imgmain.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
+    background-size: cover;
 }
 .arrange-title {
     font-family: var(--main-font);
     font-size: 44px;
     font-weight: 900;
-    color: var(--borders-color);
+    color: var(--second-accent-color);
     letter-spacing: 0.06em;
     line-height: 60px;
     padding-bottom: 30px;
 }
 .arrange-button {
     background-color: rgba(33, 150, 243, 1);
-    color: var(--borders-color);
+    color: var(--second-accent-color);
     border: 0px;
     font-family: var(--main-font);
     border-radius: 4px;
     font-size: 16px;
     padding: 10px 32px;
+    letter-spacing: 0.06em;
+    line-height: 30px;
+    font-weight: 700;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.advantages-item::before {
+    content: "";
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background: url("../images/antenna.png"), var(--background-second-color);
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.advantages-item:nth-child(2)::before {
+    background-image: url("../images/clock.png");
+    background-repeat: no-repeat;
+}
+.advantages-item:nth-child(3)::before {
+    background-image: url("../images/diagram.png");
+    background-repeat: no-repeat;
+}
+.advantages-item:nth-child(4)::before {
+    background-image: url("../images/astronaut.png");
+    background-repeat: no-repeat;
 }
 .advantages-title {
-    font-size: 14px;
-    font-family: var(--main-font);
     font-weight: 700;
     color: var(--tittle-second-color);
     padding-bottom: 10px;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 .advantages-text {
-    font-size: 14px;
-    font-family: var(--main-font);
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--text-color);
 }
-h2 {
-    font-family: var(--main-font);
+.services-title, .team-title {
     font-size: 36px;
     font-weight: 700;
-    color: rgba(33, 33, 33, 1);
+    color:var(--tittle-second-color);
     text-align: center;
     padding-bottom: 50px;
     letter-spacing: 0.03em;
@@ -146,7 +157,6 @@ h2 {
 .services-list {
     display: flex;
     gap: 30px;
-    text-align: center;
 }
 .team {
     padding-top: 94px;
@@ -154,7 +164,6 @@ h2 {
     background-color: var(--background-second-color);
 }
 .team-member {
-    font-family: var(--main-font);
     font-size: 16px;
     font-weight: 500;
     text-align: center;
@@ -163,7 +172,6 @@ h2 {
     color: var(--tittle-second-color);
 }
 .team-job {
-    font-family: var(--main-font);
     font-size: 16px;
     text-align: center;
     padding-top: 10px;
@@ -174,6 +182,7 @@ h2 {
     background-color: var(--second-accent-color);
     padding-bottom: 30px;
     border-radius: 4px;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12)
 }
 .advantages-list {
     display: flex;
@@ -202,25 +211,18 @@ h2 {
 }
 .footer-letters {
     color: var(--accent-color);
-    font-family: var(--second-font);
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
 }
 .address-list {
+    display: flex;
     padding-top: 20px;
+    column-gap: 9px;
+    flex-direction: column;
 }
 .address-link {
-    font-family: var(--main-font);
-    font-size: 14px;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-link-color);
     line-height: 24px;
 }
 .address-special {
-    font-family: var(--main-font);
-    font-size: 14px;
-    letter-spacing: 0.03em;
     color: var(--second-accent-color);
-    line-height: 24px;
 }
